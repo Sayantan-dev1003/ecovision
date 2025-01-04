@@ -6,6 +6,14 @@
   display: none;
 }
 
+.openSans {
+  font-family: "Open Sans", serif;
+}
+
 .montserrat {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", serif;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
 }
