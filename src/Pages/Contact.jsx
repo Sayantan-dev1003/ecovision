@@ -13,7 +13,7 @@ const Contact = () => {
 
     return (
         <>
-            <div className="w-full px-12 py-10 bg-[#f4f4f4] flex flex-col mobile:px-4 mobile:py-10 tablet:px-8 tablet:py-10">
+            <div className="w-full px-12 pt-28 pb-16 bg-[#f4f4f4] flex flex-col mobile:px-4 mobile:py-16 tablet:px-8 tablet:py-16">
                 <h2 className="text-3xl montserrat font-bold text-[#2E7D32] mobile:text-xl tablet:text-2xl">Connect with EcoVision</h2>
                 <p className="text-base italic montserrat text-[#2B2B2B] mb-5 font-semibold mobile:text-xs tablet:text-sm">
                     We&apos;d love to hear from you! Reach out for enquiries or feedback.

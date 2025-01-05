@@ -1,7 +1,7 @@
 const HomeText = () => {
     return (
         <>
-            <div className="bg-[#f4f4f4] laptop:hidden text-center text-[#2E7D32] w-full flex flex-col items-center justify-center gap-4 py-20 montserrat">
+            <div className="bg-[#f4f4f4] laptop:hidden text-center text-[#2E7D32] w-full flex flex-col items-center justify-center gap-4 mobile:pt-20 mobile:pb-40 tablet:pt-28 tablet:pb-72 montserrat">
                 <h1 className="text-2xl mobile:text-[22px] tablet:text-2xl font-bold montserrat w-4/5 text-center">
                     Reimagine Urban Green Spaces for a Sustainable Future
                 </h1>

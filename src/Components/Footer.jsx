@@ -18,7 +18,7 @@ const Footer = () => {
           <ul className="space-y-2">
             <li><ScrollLink to="home" smooth={true} className="text-gray-400 hover:text-white transition duration-300">Home</ScrollLink></li>
             <li><ScrollLink to="about" smooth={true} className="text-gray-400 hover:text-white transition duration-300">About Us</ScrollLink></li>
-            <li><ScrollLink to="services" smooth={true} className="text-gray-400 hover:text-white transition duration-300">Services</ScrollLink></li>
+            <li><ScrollLink to="features" smooth={true} className="text-gray-400 hover:text-white transition duration-300">Features</ScrollLink></li>
             <li><ScrollLink to="contact" smooth={true} className="text-gray-400 hover:text-white transition duration-300">Contact</ScrollLink></li>
           </ul>
         </div>
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="mt-8 pt-8 border-t border-gray-700 flex flex-col sm:flex-row justify-between items-center">
+      <div className="mt-8 pt-8 border-t border-gray-700 flex flex-col laptop:flex-row justify-between items-center">
         <p className="text-gray-400 text-sm mb-4 sm:mb-0">
           © 2025 EcoVision. All rights reserved.
         </p>

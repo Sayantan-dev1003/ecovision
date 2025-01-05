@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 const Features = () => {
     return (
         <>
-            <div className="w-full px-12 py-16 bg-[#f4f4f4] flex flex-col mobile:px-4 mobile:py-10 tablet:px-8 tablet:py-10">
+            <div className="w-full px-12 pt-28 pb-16 bg-[#f4f4f4] flex flex-col mobile:px-4 mobile:py-16 tablet:px-8 tablet:py-16">
                 <p className="text-3xl montserrat font-bold text-[#2E7D32] mobile:text-xl tablet:text-2xl">What Can EcoVision Do for You?</p>
                 <p className="openSans mt-8 text-justify text-[#6C757D]">Discover how EcoVision is transforming urban spaces with cutting-edge features designed to optimize and sustain green areas. From advanced data analysis to actionable insights, our platform empowers city planners and communities to create harmonious, eco-friendly urban environments. Explore the tools and innovations that make sustainable urban living a reality.</p>
                 <div className="openSans mt-6 flex flex-wrap gap-4 w-full">

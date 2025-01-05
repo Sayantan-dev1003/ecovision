@@ -10,11 +10,11 @@ const LandingPage = () => {
   return (
     <div>
         <Header />
-        <Home />
-        <About />
-        <Features />
-        <Working />
-        <Contact />
+        <div id="home"><Home /></div>
+        <div id="about"><About /></div>
+        <div id="features"><Features /></div>
+        <div id="working"><Working /></div>
+        <div id="contact"><Contact /></div>
         <Footer />
     </div>
   )

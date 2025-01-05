@@ -3,7 +3,7 @@ import AboutIMG from "../images/AboutIMG.webp"
 const About = () => {
     return (
         <>
-            <div className="w-full px-12 py-16 bg-[#f4f4f4] flex flex-col mobile:px-4 mobile:py-6 tablet:px-8 tablet:py-10">
+            <div className="w-full px-12 pt-28 pb-16 bg-[#f4f4f4] flex flex-col mobile:px-4 mobile:py-16 tablet:px-8 tablet:py-16">
                 <p className="text-3xl montserrat font-bold text-[#2E7D32] mobile:text-xl tablet:text-2xl">About EcoVision: Building Sustainable Futures Together</p>
                 <p className="text-base italic montserrat text-[#2B2B2B] mb-8 font-semibold mobile:text-xs tablet:text-sm">Redefining urban landscapes through technology and sustainability.</p>
                 <div className="flex gap-10 w-full flex-row mobile:flex-col-reverse">
