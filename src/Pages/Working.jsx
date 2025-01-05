@@ -1,4 +1,8 @@
+import { useNavigate } from 'react-router-dom';
+
 const Working = () => {
+    const navigate = useNavigate();
+
     const steps = [
         {
             title: 'Data Collection and Integration',
@@ -53,7 +57,7 @@ const Working = () => {
             </div>
             <div className="flex flex-col items-center mt-8 gap-1">
                 <h2 className="text-xl montserrat font-bold text-[#2E7D32] mobile:text-lg tablet:text-lg">Ready to Transform Your City?</h2>
-                <button className="font-bold openSans text-[#434a52] bg-[#FFC107] hover:bg-[#E0A800] hover:text-white outline-none py-2 px-4 rounded-lg mobile:text-xs tablet:text-sm">Sign Up</button>
+                <button className="font-bold openSans text-[#434a52] bg-[#FFC107] hover:bg-[#E0A800] hover:text-white outline-none py-2 px-4 rounded-lg mobile:text-xs tablet:text-sm" onClick={() => navigate('/signup')}>Get Started</button>
             </div>
         </section>
     );

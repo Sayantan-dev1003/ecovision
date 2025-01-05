@@ -5,8 +5,10 @@ import LOGOImg from "../images/LOGOImg.png"
 import LOGOName from "../images/LOGOName.png"
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { Link as ScrollLink } from 'react-scroll'; // Import ScrollLink from react-scroll
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 
 const SideBar = ({ isOpen, onClose }) => {
+    const navigate = useNavigate(); // Initialize useNavigate
 
     return (
         <>
@@ -35,7 +37,7 @@ const SideBar = ({ isOpen, onClose }) => {
                             <ScrollLink to="about" smooth={true} className="p-2 w-full tracking-wide hover:bg-[#5eb462] cursor-pointer rounded-md" onClick={onClose}>About</ScrollLink>
                             <ScrollLink to="features" smooth={true} className="p-2 w-full tracking-wide hover:bg-[#5eb462] cursor-pointer rounded-md" onClick={onClose}>Features</ScrollLink>
                             <ScrollLink to="contact" smooth={true} className="p-2 w-full tracking-wide hover:bg-[#5eb462] cursor-pointer rounded-md" onClick={onClose}>Contact</ScrollLink>
-                            <button className="font-bold text-[#434a52] bg-[#FFC107] hover:bg-[#E0A800] hover:text-white outline-none py-2 px-4 mt-8 rounded-lg">Login</button>
+                            <button className="font-bold text-[#434a52] bg-[#FFC107] hover:bg-[#E0A800] hover:text-white outline-none py-2 px-4 mt-8 rounded-lg" onClick={() => navigate('/signin')}>Sign In</button>
                         </div>
                     </div>
                     <div className="mt-8 pt-3 border-t border-b-[#6C757D] flex flex-col justify-between items-center">

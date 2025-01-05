@@ -5,13 +5,16 @@ import LOGOName from "../images/LOGOName.png"
 import { Link as ScrollLink } from 'react-scroll';
 import SideBar from "./Sidebar";
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 
 const Header = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false); 
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
   };
+
   return (
     <>
       <header className="sticky top-0 left-0 z-30 w-full flex justify-between items-center px-12 py-3 mobile:px-3.5 tablet:px-8 montserrat bg-[#165e27] text-white">
@@ -26,7 +29,7 @@ const Header = () => {
             <ScrollLink to="features" smooth={true} className="hover:text-[#FFC107] active:text-[#5CDBF0] cursor-pointer">Features</ScrollLink>
             <ScrollLink to="contact" smooth={true} className="hover:text-[#FFC107] active:text-[#5CDBF0] cursor-pointer">Contact</ScrollLink>
           </div>
-          <button className="font-bold text-[#434a52] bg-[#FFC107] hover:bg-[#E0A800] hover:text-white outline-none py-2 px-4 rounded-lg">Login</button>
+          <button className="font-bold text-[#434a52] bg-[#FFC107] hover:bg-[#E0A800] hover:text-white outline-none py-2 px-4 rounded-lg" onClick={() => navigate('/signin')}>Sign In</button>
         </div>
         <FontAwesomeIcon icon={faBars} onClick={toggleSidebar} className="hidden mobile:block laptop:hidden tablet:block hover:text-[#FFC107] active:text-[#5CDBF0] cursor-pointer" />
       </header>
